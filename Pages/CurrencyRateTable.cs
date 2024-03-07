@@ -54,7 +54,7 @@ namespace CurrencyTables.Pages
             int i = 1;
             foreach (var filedata in RatesFromFile.Rates())
             {
-                // making sure that correct page/table is opened
+                // ensuring that rate table sequence has not changed
                 Assert.That(filedata.Currency == TableCurrencyNameToText(i));
                 reportData.Add(new ReportData(filedata.Currency, Verify.Equals(filedata.Rate, Convert.ToDecimal(TableCurrencyRateToText(i)))));
                 i++;

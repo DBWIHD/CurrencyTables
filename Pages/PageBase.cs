@@ -1,7 +1,7 @@
 ﻿using CurrencyTables.Drivers;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
-using TimeoutExtensions;
+using CurrencyTables.Support;
 
 namespace CurrencyTables.Pages
 {
@@ -9,7 +9,7 @@ namespace CurrencyTables.Pages
     {
         protected readonly SeleniumDriver Chrome;
 
-        public PageBase(SeleniumDriver chrome)
+        protected PageBase(SeleniumDriver chrome)
         {
             Chrome = chrome;
         }

@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
-namespace TimeoutExtensions
+namespace CurrencyTables.Support
 {
     public static class WithTimer
     {
